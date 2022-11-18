@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "youtube-analytics"
+version = "0.1.0"
+description = ""
+authors = ["Pietro Greselin <p.greselin@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "youtube_analytics"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-api-python-client = "^2.66.0"
+google-auth-oauthlib = "^0.7.1"
+google-auth-httplib2 = "^0.1.0"
+pandas = "^1.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
